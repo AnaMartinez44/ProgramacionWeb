@@ -32,7 +32,7 @@
 
 <body style="background-color: #aa8ab3;">
     <div id="seccion1">
-    <h1> Eliminar a usuario</h1>
+    <h1> Eliminar usuario</h1>
     </div>
     
     <div id="seccion2">
