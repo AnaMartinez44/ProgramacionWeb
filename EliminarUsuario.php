@@ -7,27 +7,32 @@
     
     <title>Elimina a un usuario </title>
     <style>
+        
+
         #seccion1 {
-            height: 200px;
+            height: 100px;
         }
         h1 {
             text-align: center;
         }
 
             #seccion2 {
-            height: 300px;
+            height: 200px;
             }
 
             #seccion3 {
             height: 300px;
             }     
+            h3 {
+            text-align: center;
+        }
     </style>
 
 </head>
 
 <body style="background-color: #aa8ab3;">
     <div id="seccion1">
-    <h1> Eliminar usuario</h1>
+    <h1> Eliminar a usuario</h1>
     </div>
     
     <div id="seccion2">
