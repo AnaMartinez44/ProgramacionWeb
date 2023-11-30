@@ -9,7 +9,7 @@
 <body style="background-color: #aa8ab3;">
     <div>
     <form method= "post" action="AgregarUsuario.php" name=lolo>
+        <h1> REGISTRO </h1>
 
-    <table>
-        <tr><td style="background-color: #aa8ab3;"> <label> Registrarte</label></td></tr>
-        <tr><td><input type="text" name= "Ingresa tu usuario"/> </td></tr>
+        <label for="nombre_usuario">Nombre de Usuario:</label>
+        <input type="text" id="nombre_usuario" name="nombre_usuario" required><br>
