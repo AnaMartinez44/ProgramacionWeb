@@ -75,6 +75,15 @@
             src="https://amei.mx/wp-content/uploads/2016/08/UNAM-FES-Aragon.png" 
             alt="Logo" 
             height="100">
+            </div>
+        <div class="texto">
+            <p>UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO</p>
+            <p>FACULTAD DE ESTUDIOS SUPERIORES ARAGÓN</p>
+        </div>
+    </div>
+
+
+
 
 
        
