@@ -1,9 +1,10 @@
-CREATE DATABASE FESAR; 
+DROP SCHEMA IF EXIST 'FESAR'; 
+CREATE SCHEMA IF NOT EXIST 'FESAR' DEFAULT CHARACTER 
+ 
 USE FESAR; 
 CREATE TABLE  `persona`(
 `numero` int(11) NOT NULL,  
 `nombre_usuario` text not null,
-`carrera` text not null,
 `no_cuenta` int(10) not null,
 `direccion` text not null,
 `telefono` varchar (8) not null,
@@ -19,14 +20,12 @@ ADD PRIMARY KEY (`numero`);
 ;
 
 
-insert into `persona`(`numero`,`nombre_usuario`, `carrera`,`no_cuenta`,`direccion`,`telefono`,`email`,`password`)values('1','Aaron Velasco','ico','413112571','gloria 15','5612315','aaron@gmail.com','123456');
-insert into `persona`(`numero`,`nombre_usuario`, `carrera`,`no_cuenta`,`direccion`,`telefono`,`email`,`password`)values('2','Aaron Velasco','ico','413112572','gloria 15','5612315','aaron@gmail.com','123456');
-insert into `persona`(`numero`,`nombre_usuario`, `carrera`,`no_cuenta`,`direccion`,`telefono`,`email`,`password`)values('3','Aaron Velasco','ico','413112573','gloria 15','5612315','aaron@gmail.com','123456');
-insert into `persona`(`numero`,`nombre_usuario`, `carrera`,`no_cuenta`,`direccion`,`telefono`,`email`,`password`)values('4','Aaron Velasco','ico','413112574','gloria 15','5612315','aaron@gmail.com','123456');
-insert into `persona`(`numero`,`nombre_usuario`, `carrera`,`no_cuenta`,`direccion`,`telefono`,`email`,`password`)values('6','Aaron Velasco','ico','413112575','gloria 15','5612315','aaron@gmail.com','123456');
-insert into `persona`(`numero`,`nombre_usuario`, `carrera`,`no_cuenta`,`direccion`,`telefono`,`email`,`password`)values('7','Aaron Velasco','ico','413112576','gloria 15','5612315','aaron@gmail.com','123456');
-insert into `persona`(`numero`,`nombre_usuario`, `carrera`,`no_cuenta`,`direccion`,`telefono`,`email`,`password`)values('8','Aaron Velasco','ico','413112577','gloria 15','5612315','aaron@gmail.com','123456');
-insert into `persona`(`numero`,`nombre_usuario`, `carrera`,`no_cuenta`,`direccion`,`telefono`,`email`,`password`)values('9','Aaron Velasco','ico','413112578','gloria 15','5612315','aaron@gmail.com','123456');
+insert into `persona`(`numero`,`nombre_usuario`,`no_cuenta`,`direccion`,`telefono`,`email`,`password`)values('1','Aaron Velasco','413112571','gloria 15','5612315','aaron@gmail.com','123456');
+insert into `persona`(`numero`,`nombre_usuario`,`no_cuenta`,`direccion`,`telefono`,`email`,`password`)values('2','Aaron Velasco','413112572','gloria 15','5612315','aaron@gmail.com','123456');
+insert into `persona`(`numero`,`nombre_usuario`,`no_cuenta`,`direccion`,`telefono`,`email`,`password`)values('3','Aaron Velasco','413112573','gloria 15','5612315','aaron@gmail.com','123456');
+insert into `persona`(`numero`,`nombre_usuario`,`no_cuenta`,`direccion`,`telefono`,`email`,`password`)values('4','Aaron Velasco','413112574','gloria 15','5612315','aaron@gmail.com','123456');
+insert into `persona`(`numero`,`nombre_usuario`,`no_cuenta`,`direccion`,`telefono`,`email`,`password`)values('6','Aaron Velasco','413112575','gloria 15','5612315','aaron@gmail.com','123456');
+
 
 
 -- define la llave primaria

@@ -1,20 +1,21 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscar Usuario</title>
-</head>
-<body>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+    $nombre_usuario = $_POST["nombre_usuario"];
 
-<h2>Buscar Usuario</h2>
+    $consulta_sql = "SELECT * FROM persona WHERE nombre_usuario = '$nombre_usuario'";
+    $resultado = $conexion->query($consulta_sql);
 
-<form id="formularioBusqueda" action="procesar_buscar_usuario.php" method="POST">
-    <label for="nombre_usuario">Nombre de Usuario:</label>
-    <input type="text" id="nombre_usuario" name="nombre_usuario" required><br>
-
-    <input type="submit" value="Buscar Usuario">
-</form>
-
-</body>
-</html>
+    if ($resultado->num_rows > 0) {
+   
+        while ($row = $resultado->fetch_assoc()) {
+            echo "<h2>Usuario encontrado:</h2>";
+            echo "<p>Nombre de Usuario: " . $row["nombre_usuario"] . "</p>";
+            echo "<p>No Cuenta Institucional: " . $row["no_cuenta"] . "</p>";
+        }
+    } else {
+        echo "<h2>Usuario no encontrado</h2>";
+    }
+    $conexion->close();
+}
+?>

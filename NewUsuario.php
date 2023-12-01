@@ -7,3 +7,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telefono = $_POST["telefono"];
     $email = $_POST["email"];
     $password = $_POST["password"];
+}
+?>

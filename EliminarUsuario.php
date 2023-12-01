@@ -7,8 +7,24 @@
     
     <title>Elimina a un usuario </title>
     <style>
-        
 
+        .cabecera {
+            background-image: url("https://shorturl.at/uPUX1");
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            margin-right: 10px;
+        }
+
+        .texto {
+            flex-grow: 1;
+            text-align: center;
+        }
         #seccion1 {
             height: 100px;
         }
@@ -30,7 +46,18 @@
 
 </head>
 
-<body style="background-color: #aa8ab3;">
+<body style="background-color: #a18594;">
+<div class="cabecera">
+        <div class="logo">
+            <img src="https://amei.mx/wp-content/uploads/2016/08/UNAM-FES-Aragon.png" alt="Logo" height="100">
+        </div>
+        <div class="texto">
+            <p>UNIVERSIDAD NACIONAL AUTONÓMA DE MÉXICO</p>
+            <p>FACULTAD DE ESTUDIOS SUPERIORES ARAGÓN</p>
+          
+        </div>
+    </div>
+
     <div id="seccion1">
     <h1> Eliminar usuario</h1>
     </div>
