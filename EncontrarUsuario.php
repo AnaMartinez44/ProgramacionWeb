@@ -82,18 +82,16 @@
         </div>
     </div>
 
+    <div id="formularioContainer">
+        <h2>Buscar Usuario</h2>
+        <form id="formularioBusqueda" action="FindUsuario.php" method="POST">
+            <label for="nombre_usuario">Nombre de Usuario:</label>
+            <input type="text" id="nombre_usuario" name="nombre_usuario" required><br>
 
 
-
-
-       
-
-
-
-        
-    
-
-        
+            <input type="submit" value="Buscar Usuario">
+        </form>
+    </div>      
 
 </body>
 
